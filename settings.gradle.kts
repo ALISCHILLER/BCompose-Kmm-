@@ -12,6 +12,7 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+
     }
 }
 
@@ -25,6 +26,12 @@ dependencyResolutionManagement {
             }
         }
         mavenCentral()
+        maven {
+            url = uri("https://maven.pkg.jetbrains.space/public/p/ktor/eap")
+        }
+        maven {
+            url = uri("https://maven.pkg.jetbrains.space/kotlin/p/kotlin/dev")
+        }
     }
 
     versionCatalogs {
@@ -33,5 +40,5 @@ dependencyResolutionManagement {
         }
     }
 }
-
+include(":composeWebInterop")
 include(":composeApp")

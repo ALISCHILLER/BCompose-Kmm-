@@ -1,4 +1,4 @@
-@file:OptIn(ExperimentalResourceApi::class)
+
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
@@ -27,10 +27,11 @@ import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.unit.dp
 import compose_kmm.composeapp.generated.resources.Res
 import compose_kmm.composeapp.generated.resources.compose_multiplatform
-import theme.borderColor
-import theme.textHintColor
+import theme.*
 
 
+
+@OptIn(ExperimentalResourceApi::class)
 @Composable
 @Preview
 fun App() {
